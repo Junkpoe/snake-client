@@ -14,6 +14,14 @@ const connect = function () {
   conn.on ('connect', () => {
     console.log("Succesfully connected to game");
     conn.write("Name: LNK");
+    
+    // setInterval (() => {
+    //   conn.write("Move: up");
+    // }, 50);
+
+    // setInterval (() => {
+    //   conn.write("Move: left");
+    // }, 100);
   });
 
   return conn;
