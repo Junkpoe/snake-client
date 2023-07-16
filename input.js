@@ -32,6 +32,26 @@ const handleUserInput = (input, conn) => { // code for reading user input
   if (input === 'a') {
     connection.write("Move: left")
   };
+
+  if (input === 'q') {
+    connection.write("Say: It's dancing time")
+  };
+
+  if (input === 'e') {
+    connection.write("Say: WeeWooWeeWoo")
+  };
+
+  if (input === '1') {
+    connection.write("Say: Howdy")
+  };
+
+  if (input === '2') {
+    connection.write("Say: git gud")
+  };
+
+  if (input === '3') {
+    connection.write("Say: boop")
+  };
 };
 
 module.exports = {setupInput};
