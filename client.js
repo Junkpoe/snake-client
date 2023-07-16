@@ -13,6 +13,7 @@ const connect = function () {
 
   conn.on ('connect', () => {
     console.log("Succesfully connected to game");
+    conn.write("Name: LNK");
   });
 
   return conn;
