@@ -1,4 +1,3 @@
-const { connect } = require("./client");
 const { moveUpKey, moveRightKey, moveDownKey, moveLeftKey, messages } = require("./constants");
 
 let connection;
@@ -19,19 +18,19 @@ const handleUserInput = (input) => { // code for reading user input
   }
 
   if (input === moveUpKey) {
-    connection.write("Move: up")
-  };
+    connection.write("Move: up");
+  }
 
   if (input === moveRightKey) {
-    connection.write("Move: right")
-  };
+    connection.write("Move: right");
+  }
 
   if (input === moveDownKey) {
-    connection.write("Move: down")
-  };
+    connection.write("Move: down");
+  }
 
   if (input === moveLeftKey) {
-    connection.write("Move: left")
+    connection.write("Move: left");
   }
 
   if (messages[input]) {
